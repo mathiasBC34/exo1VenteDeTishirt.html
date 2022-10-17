@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>clien</legend>
+            <label for="Nometprenom">Nom et Prenom :</label>
+            <input 
+                type="text" 
+                name="Nom" 
+                id="Nom" 
+                placeholder="Nom et prenom" 
+                pattern="^[A-Z]{1,}$" 
+                type="submit"
+            />
+            </br>
+            <label for="adresse">Adresse : </label>
+            <input 
+                type="text" 
+                name="adresse" 
+                id="adresse" 
+                pattern="^[A-Z]{1}[a-z]+$" 
+            />
+            </br>
+            <label for="code postals"> code postals :</label>
+                <input 
+                    type="text"
+                    name="cp"
+                    id="cp"
+                    pattern="^[0-9]{5}$"
+                />
+            </br>
+            <label for="Pays">liste des pays :</label>
+            <select name="Pays" id="Pays">
+                <option value="France">France</option>
+            </select>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>entreprise</legend>
+                <label for="moedel"> model : </label>
+                <select name="model" id="model">
+                    <option value="model96">model96</option>
+                    <option value="model97">model97</option>
+                    <option value="model98">model98</option>
+                    <option value="model99">model99</option>
+                </select>
+                </br>
+                <label for="taille">taille</label>
+                <input 
+                    type="range" 
+                    id="taille" 
+                    name="taille" 
+                    min="0" 
+                    max="100"
+                    step="25"
+                />
+
+                </br>
+                <label for="quantité">quantité : </label>
+                <input 
+                    type="number" 
+                    name="num" 
+                    id="num" 
+                    value="1" 
+                    max="165" 
+                    min="1" 
+                    step="3" 
+                />
+        </fieldset>
+    </form>
+</body>
+
+</html>
